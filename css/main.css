@@ -257,7 +257,7 @@ h1:hover {
         font-size: 18px;
     }
 }
-@media screen and (max-width: 991px) and (min-width: 768px) 
+@media screen and (max-width: 991px)  
 {
     .conteiner 
     {
@@ -391,7 +391,7 @@ h1:hover {
 }
 
 .product-order {
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 10%, transparent 70%), url(/SHARIPOV/img/Techno.jpg); 
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 10%, transparent 70%), url(/img/Techno.jpg); 
     background-size: cover; 
     background-position: center; 
     transition: background-color 0.3s ease-in-out; 
