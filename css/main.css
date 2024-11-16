@@ -217,6 +217,92 @@ h1:hover {
     opacity: 0; 
 }
 
+.product-order {
+    padding: 50px;
+    background-color: #eaf7e1;
+    text-align: center;
+    padding: 100px;
+}
+
+.product-order h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.product-order form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    width: 350px;
+}
+
+.product-order form input {
+    width: 80%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.product-order form input[type="date"] {
+    color: #555; 
+}
+
+.product-order form input:focus {
+    border-color: #5cb85c; 
+    outline: none;
+}
+
+.product-order form button {
+    width: 200px;
+    height: 50px;
+    background-color: #5cb85c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-order form button:hover {
+    background-color: #3b813b;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #201b2d;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.product-order {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 10%, transparent 70%), url(/SHARIPOV/img/Techno.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.product-order form {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-order:hover {
+    filter: grayscale(0%); 
+}
+
+.product-order:not(:hover) {
+    filter: grayscale(100%); 
+}
+
 @media screen and (max-width: 1199px) and (min-width: 992px) 
 {
     .conteiner 
@@ -323,91 +409,3 @@ h1:hover {
         font-size: 20px;
     }
 }
-.product-order {
-    padding: 50px;
-    background-color: #eaf7e1;
-    text-align: center;
-    padding: 100px;
-}
-
-.product-order h2 {
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-weight: 700;
-}
-
-.product-order form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    gap: 20px;
-    width: 350px;
-}
-
-.product-order form input {
-    width: 80%;
-    padding: 15px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.product-order form input[type="date"] {
-    color: #555; 
-}
-
-.product-order form input:focus {
-    border-color: #5cb85c; 
-    outline: none;
-}
-
-.product-order form button {
-    width: 200px;
-    height: 50px;
-    background-color: #5cb85c;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.product-order form button:hover {
-    background-color: #3b813b;
-}
-.checkbox-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #201b2d;
-}
-
-.checkbox-container input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(1.2);
-}
-
-.product-order {
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 10%, transparent 70%), url(/img/Techno.jpg); 
-    background-size: cover; 
-    background-position: center; 
-    transition: background-color 0.3s ease-in-out; 
-}
-
-.product-order form {
-    transition: background-color 0.3s ease-in-out;
-}
-
-.product-order:hover {
-    filter: grayscale(0%); 
-}
-
-.product-order:not(:hover) {
-    filter: grayscale(100%); 
-}
-
-
-

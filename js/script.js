@@ -5,6 +5,7 @@ document.getElementById("productOrderForm").addEventListener("submit", function 
     const quantity = document.getElementById("quantity").value.trim();
     const email = document.getElementById("email").value.trim();
     const deliveryDate = document.getElementById("delivery_date").value.trim();
+    const termsCheckbox = document.getElementById("termsCheckbox").checked;
     const errorMessage = document.getElementById("error_message");
     
     
@@ -39,6 +40,11 @@ document.getElementById("productOrderForm").addEventListener("submit", function 
         errors.push("Дата доставки не может быть в прошлом.");
     }
 
+    // Проверка чекбокса
+    if (!termsCheckbox) {
+        errors.push("Вы должны согласиться с условиями.");
+    }
+
     // Отображение ошибок или вывод данных
     if (errors.length > 0) {
         errorMessage.innerHTML = errors.join("<br>");
@@ -52,11 +58,15 @@ document.getElementById("productOrderForm").addEventListener("submit", function 
             Количество: ${quantity}
             Email: ${email}
             Дата доставки: ${deliveryDate}
+            Согласие с условиями: ${termsCheckbox ? "Да" : "Нет"}
         `;
         alert(message); // Выводим сообщение
+
         form.reset();
     }
 });
+
+
 
     const formProduct = document.getElementById('formProduct');
     formProduct.addEventListener("mouseover", () => {
